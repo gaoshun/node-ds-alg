@@ -1,18 +1,18 @@
 {
-  "name": "shun-ds-alg",
+  "name": "node-ds-alg",
   "version": "0.0.1",
   "description": "Data structures in Node.js.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gaoshun/shun-ds-alg"
+    "url": "git+https://github.com/gaoshun/node-ds-alg"
   },
   "keywords": [],
   "author": "itshun",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gaoshun/shun-ds-alg/issues"
+    "url": "https://github.com/gaoshun/node-ds-alg/issues"
   },
-  "homepage": "https://github.com/gaoshun/shun-ds-alg",
+  "homepage": "https://github.com/gaoshun/node-ds-alg",
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "babel src -d dist",

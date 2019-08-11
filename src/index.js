@@ -31,7 +31,15 @@ const { MinHeap, MaxHeap } = require('./data-structures/heap/heap');
 const BinarySearchTree = require('./data-structures/tree/binary-search-tree');
 
 // algorithms
-
+const bubbleSort = require('./algorithms/sorting/bubble-sort');
+const selectionSort = require('./algorithms/sorting/selection-sort');
+const insertionSort = require('./algorithms/sorting/insertion-sort');
+const mergeSort = require('./algorithms/sorting/merge-sort');
+const quickSort = require('./algorithms/sorting/quick-sort');
+const bucketSort = require('./algorithms/sorting/bucket-sort');
+const heapSort = require('./algorithms/sorting/heap-sort');
+const countingSort = require('./algorithms/sorting/counting-sort');
+const radixSort = require('./algorithms/sorting/radix-sort');
 
 module.exports = {
     ds: {
@@ -62,50 +70,15 @@ module.exports = {
         MinHeap: MinHeap,
         MaxHeap: MaxHeap
     },
-    alg: {}
+    alg: {
+        bubbleSort: bubbleSort,
+        selectionSort: selectionSort,
+        insertionSort: insertionSort,
+        mergeSort: mergeSort,
+        quickSort: quickSort,
+        bucketSort: bucketSort,
+        heapSort: heapSort,
+        countingSort: countingSort,
+        radixSort: radixSort,
+    }
 }
-
-// export { default as heapSort } from './algorithms/sorting/heap-sort';
-
-// export { default as Graph } from './data-structures/graph/graph';
-// export { breadthFirstSearch } from './algorithms/graph/breadth-first-search';
-// export { BFS } from './algorithms/graph/breadth-first-search';
-// export { depthFirstSearch } from './algorithms/graph/depth-first-search';
-// export { DFS } from './algorithms/graph/depth-first-search';
-// export { dijkstra } from './algorithms/graph/dijkstra';
-// export { floydWarshall } from './algorithms/graph/floyd-warshall';
-// export { prim } from './algorithms/graph/prim';
-// export { kruskal } from './algorithms/graph/kruskal';
-
-// export { shuffle } from './algorithms/shuffle/fisher–yates';
-
-// export { bubbleSort } from './algorithms/sorting/bubble-sort';
-// export { modifiedBubbleSort } from './algorithms/sorting/bubble-sort-improved';
-// export { bucketSort } from './algorithms/sorting/bucket-sort';
-// export { countingSort } from './algorithms/sorting/counting-sort';
-// export { insertionSort } from './algorithms/sorting/insertion-sort';
-// export { mergeSort } from './algorithms/sorting/merge-sort';
-// export { quickSort } from './algorithms/sorting/quicksort';
-// export { radixSort } from './algorithms/sorting/radix-sort';
-// export { selectionSort } from './algorithms/sorting/selection-sort';
-// export { shellSort } from './algorithms/sorting/shell-sort';
-
-// export { binarySearch } from './algorithms/search/binary-search';
-// export { interpolationSearch } from './algorithms/search/interpolation-search';
-// export { sequentialSearch } from './algorithms/search/sequential-search';
-// export { findMaxValue } from './algorithms/search/min-max-search';
-// export { findMinValue } from './algorithms/search/min-max-search';
-
-// export { binarySearch as binarySearchRecursive } from './algorithms/search/binary-search-recursive';
-// export { minCoinChange } from './algorithms/dynamic-programing/min-coin-change';
-// export { minCoinChange as minCoinChangeGreedy } from './algorithms/greedy/min-coin-change';
-// export { knapSack } from './algorithms/dynamic-programing/knapsack';
-// export { knapSack as knapSackRecursive } from './algorithms/dynamic-programing/knapsack-recursive';
-// export { knapSack as knapSackGreedy } from './algorithms/greedy/knapsack';
-// export { lcs } from './algorithms/dynamic-programing/longest-common-subsequence';
-// export { lcs as lcsPrint } from './algorithms/dynamic-programing/longest-common-subsequence-print';
-// export { lcs as lcsRecursive } from './algorithms/greedy/longest-common-subsequence';
-// export { matrixChainOrder } from './algorithms/dynamic-programing/matrix-chain-multiplication';
-// export { matrixChainOrder as matrixChainOrderGreedy } from './algorithms/greedy/matrix-chain-multiplication';
-// export { ratInAMaze } from './algorithms/backtracking/rat-in-maze';
-// export { sudokuSolver } from './algorithms/backtracking/sudoku-solver';
