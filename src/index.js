@@ -28,8 +28,6 @@ const AVLTree = require('./data-structures/tree/avl-tree');
 
 const { MinHeap, MaxHeap } = require('./data-structures/heap/heap');
 
-const BinarySearchTree = require('./data-structures/tree/binary-search-tree');
-
 // algorithms
 const bubbleSort = require('./algorithms/sorting/bubble-sort');
 const selectionSort = require('./algorithms/sorting/selection-sort');
@@ -40,6 +38,10 @@ const bucketSort = require('./algorithms/sorting/bucket-sort');
 const heapSort = require('./algorithms/sorting/heap-sort');
 const countingSort = require('./algorithms/sorting/counting-sort');
 const radixSort = require('./algorithms/sorting/radix-sort');
+
+const { binarySearch, binarySearchRecursive } = require('./algorithms/search/binary-search');
+const { interpolationSearch } = require('./algorithms/search/interpolation-search');
+const { sequentialSearch } = require('./algorithms/search/sequential-search');
 
 module.exports = {
     ds: {
@@ -71,6 +73,7 @@ module.exports = {
         MaxHeap: MaxHeap
     },
     alg: {
+        // sort
         bubbleSort: bubbleSort,
         selectionSort: selectionSort,
         insertionSort: insertionSort,
@@ -80,5 +83,10 @@ module.exports = {
         heapSort: heapSort,
         countingSort: countingSort,
         radixSort: radixSort,
+        // search
+        binarySearch: binarySearch,
+        binarySearchRecursive: binarySearchRecursive,
+        interpolationSearch: interpolationSearch,
+        sequentialSearch: sequentialSearch,
     }
 }
