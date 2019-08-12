@@ -37,4 +37,6 @@ function quickSort(array, compareFn = defaultCompare) {
     return quick(array, 0, array.length - 1, compareFn);
 }
 
-module.exports = quickSort;
+module.exports = {
+    quickSort: quickSort,
+};

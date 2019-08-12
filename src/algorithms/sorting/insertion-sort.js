@@ -1,6 +1,6 @@
 const { Compare, defaultCompare } = require('../../util');
 
-module.exports = (array, compareFn = defaultCompare) => {
+const insertionSort = (array, compareFn = defaultCompare) => {
     const { length } = array;
     let temp;
     for (let i = 1; i < length; i++) {
@@ -17,3 +17,7 @@ module.exports = (array, compareFn = defaultCompare) => {
     }
     return array;
 };
+
+module.exports = {
+    insertionSort: insertionSort,
+}

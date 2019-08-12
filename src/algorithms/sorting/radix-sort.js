@@ -44,4 +44,6 @@ function radixSort(array, radixBase = 10) {
     return array;
 }
 
-module.exports = radixSort;
+module.exports = {
+    radixSort: radixSort,
+};

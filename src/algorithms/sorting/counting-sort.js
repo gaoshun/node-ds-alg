@@ -23,4 +23,6 @@ function countingSort(array) {
     return array;
 }
 
-module.exports = countingSort;
+module.exports = {
+    countingSort: countingSort,
+};

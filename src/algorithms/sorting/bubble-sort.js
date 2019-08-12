@@ -1,6 +1,6 @@
 const { Compare, defaultCompare, swap } = require('../../util');
 
-module.exports = function (array, compareFn = defaultCompare) {
+function bubbleSort(array, compareFn = defaultCompare) {
     const { length } = array;
     for (let i = 0; i < length; i++) {
         // console.log('--- ');
@@ -14,3 +14,7 @@ module.exports = function (array, compareFn = defaultCompare) {
     }
     return array;
 }
+
+module.exports = {
+    bubbleSort: bubbleSort,
+};

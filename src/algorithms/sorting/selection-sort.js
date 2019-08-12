@@ -1,6 +1,6 @@
 const { Compare, defaultCompare, swap } = require('../../util');
 
-module.exports = (array, compareFn = defaultCompare) => {
+const selectionSort = (array, compareFn = defaultCompare) => {
     const { length } = array;
     let indexMin;
     for (let i = 0; i < length - 1; i++) {
@@ -19,3 +19,7 @@ module.exports = (array, compareFn = defaultCompare) => {
     }
     return array;
 };
+
+module.exports = {
+    selectionSort: selectionSort,
+}

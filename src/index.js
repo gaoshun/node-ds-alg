@@ -29,15 +29,15 @@ const AVLTree = require('./data-structures/tree/avl-tree');
 const { MinHeap, MaxHeap } = require('./data-structures/heap/heap');
 
 // algorithms
-const bubbleSort = require('./algorithms/sorting/bubble-sort');
-const selectionSort = require('./algorithms/sorting/selection-sort');
-const insertionSort = require('./algorithms/sorting/insertion-sort');
-const mergeSort = require('./algorithms/sorting/merge-sort');
-const quickSort = require('./algorithms/sorting/quick-sort');
-const bucketSort = require('./algorithms/sorting/bucket-sort');
-const heapSort = require('./algorithms/sorting/heap-sort');
-const countingSort = require('./algorithms/sorting/counting-sort');
-const radixSort = require('./algorithms/sorting/radix-sort');
+const { bubbleSort } = require('./algorithms/sorting/bubble-sort');
+const { selectionSort } = require('./algorithms/sorting/selection-sort');
+const { insertionSort } = require('./algorithms/sorting/insertion-sort');
+const { mergeSort } = require('./algorithms/sorting/merge-sort');
+const { quickSort } = require('./algorithms/sorting/quick-sort');
+const { bucketSort } = require('./algorithms/sorting/bucket-sort');
+const { heapSort } = require('./algorithms/sorting/heap-sort');
+const { countingSort } = require('./algorithms/sorting/counting-sort');
+const { radixSort } = require('./algorithms/sorting/radix-sort');
 
 const { binarySearch, binarySearchRecursive } = require('./algorithms/search/binary-search');
 const { interpolationSearch } = require('./algorithms/search/interpolation-search');

@@ -21,4 +21,6 @@ function mergeSort(array, compareFn = defaultCompare) {
     return array;
 }
 
-module.exports = mergeSort;
+module.exports = {
+    mergeSort: mergeSort,
+};

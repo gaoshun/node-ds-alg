@@ -40,4 +40,6 @@ function bucketSort(array, bucketSize = 5) {
     return sortBuckets(buckets);
 }
 
-module.exports = bucketSort;
+module.exports = { 
+    bucketSort: bucketSort,
+};

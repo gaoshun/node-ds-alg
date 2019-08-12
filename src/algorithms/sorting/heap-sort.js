@@ -23,7 +23,7 @@ function buildMaxHeap(array, compareFn) {
     return array;
 }
 
-module.exports = function (array, compareFn = defaultCompare) {
+function heapSort(array, compareFn = defaultCompare) {
     let heapSize = array.length;
     buildMaxHeap(array, compareFn);
     while (heapSize > 1) {
@@ -31,4 +31,8 @@ module.exports = function (array, compareFn = defaultCompare) {
         heapify(array, 0, heapSize, compareFn);
     }
     return array;
+}
+
+module.exports = {
+    heapSort: heapSort,
 }
